@@ -1,6 +1,6 @@
 # Автоматизированные тесты 
 ## О проекте 
-Тесты реализованы с нуля на python с использованием библиотеки Selenium.
+Тесты реализованы с нуля на python с использованием библиотеки Selenium и браузера Google Chrome.
 
 Для того чтобы тесты запустились необходимо импортировать меттоды:
 webdriver; By; Keys; Select
@@ -8,10 +8,20 @@ webdriver; By; Keys; Select
 В DR_ADRESS записываем путь к драйверу на ПК
 
 Test Suite состоит из 5 тестов:
+
+
 1 test_word_wrap;
+
+
 2 test_space_task;
+
+
 3 test_add_object_in_category;
+
+
 4 test_space_heading;
+
+
 5 test_existing_title.
 
 ## О тестах
