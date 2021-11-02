@@ -33,15 +33,18 @@ def test_space_task():
 
 
 def test_add_object_in_category():
-    """Проверяем попадёт ли в нужную категорию добавленная задача"""
+    """Проверяем попадёт ли в нужную категорию добавленная задача."""
     driver.get(URL)
     driver.find_element(By.ID, 'add_new_todo').click()
     select = Select(driver.find_element(By.ID, 'select_category'))
     select.select_by_visible_text('Прочее')
     find_text = driver.find_element(By.ID, 'project_text')
     find_text.send_keys(Keys.CONTROL, 'a')
-    find_text.send_keys('Hello world!')
+    find_text.send_keys('КОООТ')
     driver.find_element(By.ID, 'submit_add_todo').click()
+    find_text = 'КОООТ'
+    result = driver.find_element(By.XPATH, f'//*[contains(text(), "{find_text}")]')
+    assert find_text == result.text 
 
 
 def test_space_heading():
@@ -56,6 +59,8 @@ def test_space_heading():
     find_text.send_keys(Keys.CONTROL, 'a')
     find_text.send_keys('Кошачий корм')
     driver.find_element(By.ID, 'submit_add_todo').click()
+    result = driver.find_element(By.XPATH, f'//*[contains(text(), "{find_text}")]')
+    assert find_text != result.text
 
 
 def test_existing_title():
