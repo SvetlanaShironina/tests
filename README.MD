@@ -3,7 +3,7 @@
 Задание находится по ссылке https://drive.google.com/file/d/1uNZmVbD3ygyvmiiIbhiBgvd9f4OQWbE0/view?usp=sharing
 
 
-Чек-лист находится по ссылке https://drive.google.com/file/d/1bWElOs99Zw37HrnL5aKfbavSJM05pgNz/view?usp=sharing
+Чек-лист находится по ссылке https://drive.google.com/file/d/1U9287LLiGSvlxqiqA0w4EuBnDNPONbti/view?usp=sharing
 ## О проекте 
 Тесты реализованы с нуля на python с использованием библиотеки Selenium и браузера Google Chrome.
 
